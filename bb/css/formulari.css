@@ -1,0 +1,120 @@
+
+/*MENUPRINCIPAL*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #30383d;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #ccc;
+}
+
+
+
+
+/*MENU DESPEGABLE*/
+/* The side navigation menu */
+.MenuPerfil {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0px;
+    left: 0;
+    background-color: #262e32; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.MenuPerfil a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* quan passem per sobre */
+.MenuPerfil a:hover{
+    color: black;
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+/* Quan fem click a un link */
+.MenuPerfil a:focus {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+    transition: 1.0s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* Position and style the close button (top right corner) */
+.MenuPerfil .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#push {
+    transition: margin-left .5s;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .MenuPerfil {padding-top: 15px;}
+    .MenuPerfil a {font-size: 18px;}
+}
+
+
+
+/*ALTRES*/
+body {
+    margin:0;
+    background-color: grey;
+    color:white;
+}
+
+#contingut {
+margin-top: 70px;
+margin-left: 40px;
+}
+
+
+/*CONECTARSE*/
+#quadre{
+    border:2pX solid;
+    width:20%;
+    height:25%;
+    margin-left: 35%;
+    margin-top: 20%;
+    padding-left: 80px;
+    padding-bottom: 30px;
+}
+#camp1{
+    margin-bottom: -2.5px;
+}

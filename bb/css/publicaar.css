@@ -1,0 +1,242 @@
+/*MENUPRINCIPAL*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #30383d;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #ccc;
+}
+
+
+
+
+/*MENU DESPEGABLE*/
+/* The side navigation menu */
+.MenuPerfil {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0px;
+    left: 0;
+    background-color: #262e32; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.MenuPerfil a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* quan passem per sobre */
+.MenuPerfil a:hover{
+    color: black;
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+/* Quan fem click a un link */
+.MenuPerfil a:focus {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+    transition: 1.0s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* Position and style the close button (top right corner) */
+.MenuPerfil .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#push {
+    transition: margin-left .5s;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .MenuPerfil {padding-top: 15px;}
+    .MenuPerfil a {font-size: 18px;}
+}
+
+
+/*INDICADOR SCROLL*/
+/* propietats barra */
+.header {
+  position: fixed;
+  margin-top:0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+  margin-top: -25px;
+}
+
+/* barra scroll gris */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* barra scroll verd*/
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+
+/*ALTRES*/
+body {
+    margin:0;
+    background: #efefef;
+}
+
+#contingut {
+margin-top: 70px;
+margin-left: 40px;
+}
+
+.active {
+    background-color: #4CAF50;
+    color:white !important;
+}
+
+/*Publicar*/
+body {
+    font-size: 19px;
+}
+table{
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+tr {
+    border-bottom: 1px solid #cbcbcb;
+}
+th, td{
+    border: none;
+    height: 30px;
+    padding: 2px;
+}
+tr:hover {
+    background: #F5F5F5;
+}
+
+form {
+    width: 45%;
+    margin: 50px auto;
+    text-align: left;
+    padding: 20px; 
+    border: 1px solid #bbbbbb; 
+    border-radius: 5px;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5F9EA0;
+    border: none;
+    border-radius: 5px;
+}
+.edit_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    background: #2E8B57;
+    color: white;
+    border-radius: 3px;
+}
+
+.del_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    background: #800000;
+}
+.msg {
+    margin: 30px auto; 
+    padding: 10px; 
+    border-radius: 5px; 
+    color: #3c763d; 
+    background: #dff0d8; 
+    border: 1px solid #3c763d;
+    width: 50%;
+    text-align: center;
+}
+
+/*FONDO*/
+background: linear-gradient(56deg, #4caf50, #033bec);
+background-size: 400% 400%;
+-webkit-animation: animaciofondo 9s ease infinite;
+-moz-animation: animaciofondo 9s ease infinite;
+-o-animation: animaciofondo 9s ease infinite;
+animation: animaciofondo 9s ease infinite;
+@-webkit-keyframes animaciofondo {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@-moz-keyframes animaciofondo {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@-o-keyframes animaciofondo {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@keyframes animaciofondo {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}

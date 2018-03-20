@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="ComentarisApp">
+<head>
+	<!-- meta -->
+	<meta charset="utf-8">
+	<meta name="description" content="Lorem Ipsum" />
+	<meta name="author" content="Lorem Ipsum" />
+	<meta name="keywords" content="keywords">
+	<!--Angular-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+	<!-- css -->
+	<link rel="stylesheet" href="css/formulari.css" type="text/css">
+	
+	<!-- Javascript-->
+	<script type="text/javascript" src="js/javascript.js"></script>
+	
+	<!-- favicon -->
+	<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+	<title>Niño o Borracho</title>
+</head>
+<body>
+<!--("FUNCIO")MenuDespegable-->
+<div id="MenuDespegable" class="MenuPerfil">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="Perfil.html" onfocus="FuncioPerfil()" ><span><img id="iPerfil" src="recursos/img/24638-1.png" width="30" height="30"></span>Perfil</a>
+		<a href="Logros.html" onfocus="FuncioLogros()" class="active"><span><img id="iLogros" src="recursos/img/whitemedal.png" width="30" height="30"></span>Logros</a>
+		<a href="MisPosts.html" onfocus="FuncioPost()"><span><img id="iPost" src="recursos/img/post.png" width="30" height="30"></span>Mis Posts</a>
+		<a href="Ranking.html" onfocus="FuncioPodium()"><span><img id="iPodium"  src="recursos/img/podium.png" width="30" height="30"></span> Ránking</a>
+	</div>
+		
+	<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+	<div id="push">
+
+		<div id="menus">
+		
+			<ul>
+				<li>
+				<!-- Use any element to open the sidenav -->
+				<span onclick="openNav()"><img src="recursos/img/3linies menu.png" heigt="45" width="40"></span>
+				</li>
+	
+				<li><a href="home.html">INICIO</a></li>
+				<li><a href="LosMejores.html">LOS MEJORES</a></li>
+				<li><a href="Aleatorio.html">ALEATORIO</a></li>
+				<li><a href="Moderar.html">MODERAR</a></li>
+				<li><a href="Publicar.html">PUBLICAR</a></li>
+				<li style="float:right"><a class="active" href="conectarse.html">Conectarse</a></li>
+			</ul>
+			
+			<div class="header">
+				<div class="progress-container">
+					<div class="progress-bar" id="myBar"></div>
+				</div> 
+			</div>
+			
+		</div> 
+	
+	
+		<div id="contingut">
+		<h1>¡Envíanos tu anécdota!</h1>
+			<div id="quadre">
+			
+			<p>Envíanos tu anécdota</p>
+			<p>* Todas aquellas anécdotas que vengan acompañadas de su foto original, tienen más posibilidades de ser publicadas.</p>
+			<p>* No hay temas tabú.</p>
+			<p>* Lee y repasa tu mensaje. Escribe correctamente evitando errores ortográficos y lenguaje sms. Las anécdotas mal redactadas y con errores no serán publicadas.</p>
+			<p>* Si tu anécdota no es publicada, no te ofendas, ¡agradecemos enormemente tu colaboración!
+			
+			<div class="question">
+					<p id="camp1">Nombre de usuario:</p>
+					<input type="text" name="alias" id="alias" placeholder="Escribe aquí su Nick" onblur=""><br>
+				</div>
+				
+				<div class="question">
+					<p id="camp1">Contraseña:</p>
+					<input type="text" name="contrasena" id="contrasena" placeholder="Escribe aquí su contraseña" onblur=""><br>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+</body>
+</html>
